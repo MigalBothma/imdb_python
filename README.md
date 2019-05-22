@@ -4,6 +4,7 @@ imdba_python scraper
 
 Requirements :
 PIP
+lxml (pip install lxml)
 BeautifulSoup (pip install BeautifulSoup4)
 requests (pip install requests)
 *argparse (python lib)
@@ -31,13 +32,13 @@ Linux (*To be reviewed (not tested)*):
     
 9. Add this line as the first line in the script:
       #!/usr/bin/env python3
+   
+   Find    
     
 10. At the unix command prompt, type the following to make imdbscrape.py executable:
       do $ chmod +x imdbscrape.py
     
 11. Move imdbscrape.py into your bin directory, and it will be runnable from anywhere.
-
-  
 
 Windows:
     
@@ -73,7 +74,7 @@ IMDB top 250 movies. See the commands below for further usage
 optional arguments:
   -h, --help       show this help message and exit
   
---print PRINT    Print ArrayOfArrays to console (True|False)
+--console_print CONSOLE_PRINT    Print Formatted output to console (True|False)
   
 --csv CSV        Export csv to same directory as script (True|False)
   
