@@ -13,7 +13,7 @@ requests (pip install requests)
 
 How to Execute :
   
-Linux (*To be reviewed (not tested)*): 
+Linux (*(tested)*): 
     
 1. Follow this tutorial to ensure your linux env is set up (http://openbookproject.net/thinkcs/python/english3e/app_c.html)
     
@@ -33,8 +33,6 @@ Linux (*To be reviewed (not tested)*):
     
 9. Add this line as the first line in the script:
       #!/usr/bin/env python3
-   
-   Find    
     
 10. At the unix command prompt, type the following to make imdbscrape.py executable:
       do $ chmod +x imdbscrape.py
