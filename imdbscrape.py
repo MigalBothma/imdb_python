@@ -1,7 +1,6 @@
-from bs4 import BeautifulSoup
+#import python libs
 import subprocess
 import datetime
-import requests
 import argparse
 import csv
 
@@ -18,6 +17,11 @@ if(args.setup):
     subprocess.call("pip install lxml")
     subprocess.call("pip install BeautifulSoup4")
     subprocess.call("pip install requests")
+
+#import dependencies after install
+from bs4 import BeautifulSoup
+import requests
+import lxml
 
 top_size = 50 
 base_url = 'https://www.imdb.com'
