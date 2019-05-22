@@ -5,7 +5,7 @@ import argparse
 import csv
 
 parser = argparse.ArgumentParser(description='IMDB top 250 movies. See the commands below for further usage')
-parser.add_argument('--print', help='Print ArrayOfArrays to console (True|False)', type=bool)
+parser.add_argument('--console_print', help='Print Formatted output to console (True|False)', type=bool)
 parser.add_argument('--csv', help='Export csv to same directory as script (True|False)', type=bool)
 parser.add_argument('--top', help='Top (n) where n is an (integer) default : 50', type=int)
 parser.add_argument('--sortBy', help='SortBy (Rank, Title, Year, Rating, NoR, Runtime, Director)', type=str)
@@ -104,7 +104,7 @@ if(args.sortBy):
         print('**Error** : cannot sortBy')
     
     
-if (args.print == True):
+if (args.console_print == True):
     print( '\nPrinting top', top_size, 'of imdb scrape')
     print('\nSorted By: ',args.sortBy,'\n')
     print( '{0:<6} {1:<50} {2:<14} {3:<16} {4:<20} {5:<18} {6:<20}'.format('Rank', 'Title', 'Year', 'Rating', 'Number of ratings', 'Runtime', 'Director' ))
