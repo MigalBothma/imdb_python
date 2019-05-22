@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import datetime
 import requests
 import argparse
 import csv
@@ -112,8 +113,11 @@ if (args.print == True):
             print('{0:<6} {1:<50} {2:<14} {3:<16} {4:<20} {5:<18} {6:<20}'.format(movie[0], movie[2], movie[3], movie[4], movie[5], movie[6], movie[7]))
         
 if (args.csv == True):
-    with open('imdbtop250.csv', mode='w') as export_csv_file:
-        csv_writer = csv.writer(export_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    now = datetime.datetime.now()
+    csvtime = now.strftime("%y-%m-%d_%H-%M")
+    
+    with open('imdb top '+str(top_size)+' - ' +str(csvtime) + '.csv', mode='w') as export_csv_file:
+        csv_writer = csv.writer(export_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         csv_writer.writerow(['Rank', 'Title', 'Year', 'Rating', 'Number of ratings', 'Runtime', 'Director'])
         for movie in movies_names_wl:
             if len(movie) > 6:
