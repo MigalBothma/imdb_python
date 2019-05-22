@@ -56,8 +56,10 @@ Windows:
 7. pip install requests
     
 8. pip install BeautifulSoup4
+
+9. pip install lmxl
     
-9. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank*
+10. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank*
 
 ***************************** python imdbscrape.py --h *****************************
 
