@@ -115,11 +115,11 @@ if (args.csv == True):
     with open('imdbtop250.csv', mode='w') as export_csv_file:
         csv_writer = csv.writer(export_csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow(['Rank', 'Title', 'Year', 'Rating', 'Number of ratings', 'Runtime', 'Director'])
-        for index, movie in enumerate(movies_names_wl):
+        for movie in movies_names_wl:
             if len(movie) > 6:
-                csv_writer.writerow( movie[0], movie[1] , movie[2], movie[3], movie[4], movie[5], movie[6])
-            #Only print values with length > 4 ... crawled values
-            #else:
-                #csv_writer.writerow( [index, movie[1] , movie[2], movie[3]])
+                row = list([str(movie[0]), movie[2], movie[3], movie[4], movie[5], movie[6], movie[7]])
+                #print(row)
+                csv_writer.writerow(row)
+        export_csv_file.close()
 
 
