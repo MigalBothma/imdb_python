@@ -3,13 +3,12 @@
 imdba_python scraper
 
 Requirements :
-
-Python 3.5
-PIP
-lxml (pip install lxml)
-BeautifulSoup (pip install BeautifulSoup4)
-requests (pip install requests)
-*argparse (python lib)
+Python 3.5,
+PIP,
+lxml (pip install lxml),
+BeautifulSoup (pip install BeautifulSoup4),
+requests (pip install requests),
+*argparse (python lib),
 *csv (python lib)
 
 How to Execute :
