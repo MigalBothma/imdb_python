@@ -2,40 +2,40 @@
 
 imdba_python scraper
 
-
-
 Requirements :
-  
 PIP
-  BeautifulSoup (pip install BeautifulSoup4)
-  
+BeautifulSoup (pip install BeautifulSoup4)
 requests (pip install requests)
-  
 *argparse (python lib)
-  
 *csv (python lib)
-  
-
 
 How to Execute :
   
-Linux: 
+Linux (*To be reviewed (not tested)*): 
     
 1. Follow this tutorial to ensure your linux env is set up (http://openbookproject.net/thinkcs/python/english3e/app_c.html)
     
 2. Open terminal
     
-3. do $ cd /usr/bin/
+3. do $ cd /usr/local
+
+4. do $ git clone https://github.com/MigalBothma/imdba_python.git
+
+5. do $ cp /usr/local/imdba_python/imdbscrape.py /usr/bin/*
+
+6. do $ cd /usr/bin/
+
+7. sudo chmod +x /imdba_python-master/imdbscrape.py
     
-4. $ sudo vi imdbscrape.py (or you can use vim like : $ sudo vim imdbscrape.py)
+8. $ sudo vi imdbscrape.py (or you can use vim like : $ sudo vim imdbscrape.py)
     
-5. Add this line as the first line in the script:
+9. Add this line as the first line in the script:
       #!/usr/bin/env python3
     
-6. At the unix command prompt, type the following to make imdbscrape.py executable:
+10. At the unix command prompt, type the following to make imdbscrape.py executable:
       do $ chmod +x imdbscrape.py
     
-7.Move imdbscrape.py into your bin directory, and it will be runnable from anywhere.
+11. Move imdbscrape.py into your bin directory, and it will be runnable from anywhere.
 
   
 
@@ -57,9 +57,7 @@ Windows:
     
 8. pip install BeautifulSoup4
     
-9. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank
-
-*
+9. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank*
 
 ***************************** python imdbscrape.py --h *****************************
 
