@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import subprocess
 import datetime
 import requests
 import argparse
@@ -9,8 +10,14 @@ parser.add_argument('--console_print', help='Print Formatted output to console (
 parser.add_argument('--csv', help='Export csv to same directory as script (True|False)', type=bool)
 parser.add_argument('--top', help='Top (n) where n is an (integer) default : 50', type=int)
 parser.add_argument('--sortBy', help='SortBy (Rank, Title, Year, Rating, NoR, Runtime, Director)', type=str)
+parser.add_argument('--setup', help='install all required dependencies for package (pip required) (True|False)', type=bool)
 
 args = parser.parse_args()
+
+if(args.setup):
+    subprocess.call("pip install lxml")
+    subprocess.call("pip install BeautifulSoup4")
+    subprocess.call("pip install requests")
 
 top_size = 50 
 base_url = 'https://www.imdb.com'
