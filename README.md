@@ -91,15 +91,11 @@ optional arguments:
   
 *********************************************************************************
 
-
-
 As seen above, the basic options are :
 
---print   True|False        : default false.
-
---csv     True|False        : default false.
-
---top n                     : default 50.
-
---sortBy (Rank, Title, Year, Rating, NoR, Runtime, Director) : default no sort
+1. --print   True|False        : default false.
+2. --csv     True|False        : default false.
+3. --top n                     : default 50.
+4. --sortBy (Rank, Title, Year, Rating, NoR, Runtime, Director) : default no sort
+5. --setup   True|False        : default false
 
