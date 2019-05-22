@@ -17,7 +17,7 @@ Linux (*(tested)*):
     
 1. Follow this tutorial to ensure your linux env is set up (http://openbookproject.net/thinkcs/python/english3e/app_c.html)
     
-2. Open terminal
+2. Open terminal ( optional : logon as designated script user (This tests user perms and limits r/w access to any other file systems) )
     
 3. do $ cd /usr/local
 
@@ -27,9 +27,9 @@ Linux (*(tested)*):
 
 6. do $ cd /usr/bin/
 
-7. sudo chmod +x /imdba_python-master/imdbscrape.py
+7. sudo chmod +x /imdbscrape.py (untested)
     
-8. $ sudo vi imdbscrape.py (or you can use vim like : $ sudo vim imdbscrape.py)
+8. $ sudo vi imdbscrape.py (or you can use vim : $ sudo vim imdbscrape.py)
     
 9. Add this line as the first line in the script:
       #!/usr/bin/env python3
@@ -38,6 +38,14 @@ Linux (*(tested)*):
       do $ chmod +x imdbscrape.py
     
 11. Move imdbscrape.py into your bin directory, and it will be runnable from anywhere.
+
+12. pip install requests
+
+13. pip install BeautifulSoup4
+
+14. pip install lmxl
+
+15.
 
 Windows:
     
