@@ -67,21 +67,18 @@ Windows:
 usage: imdbscrape.py [-h] [--print PRINT] [--csv CSV] [--top TOP]
  [--sortBy SORTBY]
 
-
 IMDB top 250 movies. See the commands below for further usage
 
-
-
 optional arguments:
-  -h, --help       show this help message and exit
-  
---console_print CONSOLE_PRINT    Print Formatted output to console (True|False)
-  
---csv CSV        Export csv to same directory as script (True|False)
-  
---top TOP        Top (n) where n is an (integer) default : 50
-  
---sortBy SORTBY  SortBy (Rank, Title, Year, Rating, NoR, Runtime, Director)
+  -h, --help            show this help message and exit
+  --console_print CONSOLE_PRINT
+                        Print Formatted output to console (True|False)
+  --csv CSV             Export csv to same directory as script (True|False)
+  --top TOP             Top (n) where n is an (integer) default : 50
+  --sortBy SORTBY       SortBy (Rank, Title, Year, Rating, NoR, Runtime,
+                        Director)
+  --setup SETUP         install all required dependencies for package (pip
+                        required) (True|False)
   
   
 *********************************************************************************
