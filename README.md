@@ -45,7 +45,7 @@ Linux (*(tested)*):
 
 14. pip install lmxl
 
-15.
+15. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank*
 
 Windows:
     
