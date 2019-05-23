@@ -1,3 +1,4 @@
+# imdb sortBy functions
 def sortMoviesBy(movies_names_wl, args):
     try:
         movies_names_wl = movies_names_wl[:args.top]
@@ -5,7 +6,7 @@ def sortMoviesBy(movies_names_wl, args):
         print('**Error** : cannot slice top size')
 
     keydictionary = {'Rank': 0, 'Title': 2, 'Year': 3,
-                    'Rating': 4, 'NoR': 5, 'Runtime': 6, 'Director': 7}
+                     'Rating': 4, 'NoR': 5, 'Runtime': 6, 'Director': 7}
 
     try:
         movies_names_wl.sort(

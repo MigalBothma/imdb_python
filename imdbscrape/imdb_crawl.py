@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 # Crawler module
+
+
 def crawl_top_n(base_url, movies_names_wl, _args):
     args = _args
     count = 0

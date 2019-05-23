@@ -1,3 +1,4 @@
+# imdb console_print function
 def console_print(movies_names_wl, args):
     print('\nPrinting top', args.top, 'of imdb scrape')
     print('\nSorted By: ', args.sortBy, '\n')

@@ -10,6 +10,7 @@ import imdb_sortBy
 import imdb_print
 import imdb_csv
 
+
 def scrape_top_n(args):
     app_args = args
 
@@ -48,11 +49,12 @@ def scrape_top_n(args):
             movies_names_wl[index].insert(0, index+1)
 
     # Delve deeper into top (n) default: 50
-    movies_names_wl = imdb_crawl.crawl_top_n(base_url, movies_names_wl, app_args)
+    movies_names_wl = imdb_crawl.crawl_top_n(
+        base_url, movies_names_wl, app_args)
 
     # Slice top_size and do sortBy variable
     movies_names_wl = imdb_sortBy.sortMoviesBy(movies_names_wl, app_args)
-    
+
     # Do console print if args.console_print == True
     if (app_args.console_print == True):
         imdb_print.console_print(movies_names_wl, app_args)
