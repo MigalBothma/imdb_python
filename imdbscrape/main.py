@@ -6,6 +6,13 @@ import argparse
 import imdb_scrape
 
 if __name__ == "__main__":
+    """
+    This is the main function of imdb_scraper
+
+    Arguments passed & parsed
+    If args.csv or args.console_print not found print Argument Error and execute self with --h command
+    Else pass args to scrape_top_n in imdb_scrape
+    """
 
     parser = argparse.ArgumentParser(
         description='IMDB top 250 movies. See the commands below for further usage')

@@ -4,8 +4,29 @@ from bs4 import BeautifulSoup
 # Crawler module
 
 
-def crawl_top_n(base_url, movies_names_wl, _args):
-    args = _args
+def crawl_top_n(base_url, movies_names_wl, args):
+    """
+    This module is used to iterate and crawl over base_url + movies_names_with_links[Links] .
+
+    :param list movies_names_wl: a list of movie_names_with_links
+        movie : [Rank, Link, Title, Year, Rating, Number of Ratings, Runtime, Director]
+
+    Rank : int
+    Link : str
+    Title : str
+    Year : int
+    NoR : int
+    Runtime : str
+    Director : str
+
+    :param Namespace args: [ top, csv, sortBy, setup, console_print]
+
+    top : int
+    csv : bool
+    sortBy : string
+    setup : bool
+    console_print : bool
+    """
     count = 0
 
     while(count < args.top):

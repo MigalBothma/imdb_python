@@ -12,6 +12,18 @@ import imdb_csv
 
 
 def scrape_top_n(args):
+    """
+    This module is used to scrape the top 250 elements from IMDB and acts as orchestrator and processing central of this application.
+
+    :param Namespace args: [ top, csv, sortBy, setup, console_print]
+    
+    top : int
+    csv : bool
+    sortBy : string
+    setup : bool
+    console_print : bool
+    """
+
     app_args = args
 
     default_size = 50
