@@ -1,17 +1,15 @@
-# imdba_python
-
 Requirements
 ============
 
 External (pip)
 ---
--BeautifulSoup 
--requests 
+- BeautifulSoup 
+- requests 
 
 Native python
 --------------
--argparse (python lib)
--csv (python lib)
+- argparse (python lib)
+- csv (python lib)
 
 How to Execute
 ================
@@ -65,7 +63,6 @@ optional arguments:
 
 -------------------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------------
 As seen above, the basic options are 
 -------------------------------------------------------------------------------------------------------------
 --print   True|False        : default None.
