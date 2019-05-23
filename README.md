@@ -27,7 +27,7 @@ Linux (*(tested)*):
 
 6. do $ cd /usr/bin/
 
-7. sudo chmod +x /imdbscrape.py (untested)
+7. sudo chmod +x imdbscrape.py (untested)
     
 8. $ sudo vi imdbscrape.py (or you can use vim : $ sudo vim imdbscrape.py)
     
