@@ -1,6 +1,6 @@
-# imdba_python
+# imdb_python
 
-imdba_python scraper
+imdb top 250 scraper using Python, BeautifulSoup4 and requests.
 
 Requirements :
 Python 3.5,
