@@ -1,76 +1,49 @@
-# imdb_python
+# imdba_python
 
-imdb top 250 scraper using Python, BeautifulSoup4 and requests.
+Requirements
+============
 
-Requirements :
-Python 3.5,
-PIP,
-lxml (pip install lxml),
-BeautifulSoup (pip install BeautifulSoup4),
-requests (pip install requests),
-*argparse (python lib),
-*csv (python lib)
+External (pip)
+---
+-BeautifulSoup 
+-requests 
 
-How to Execute :
-  
-Linux (*(tested)*): 
-    
-1. Follow this tutorial to ensure your linux env is set up (http://openbookproject.net/thinkcs/python/english3e/app_c.html)
-    
-2. Open terminal ( optional : logon as designated script user (This tests user perms and limits r/w access to any other file systems) )
-    
-3. do $ cd /usr/local
+Native python
+--------------
+-argparse (python lib)
+-csv (python lib)
 
-4. do $ git clone https://github.com/MigalBothma/imdba_python.git
+How to Execute
+================
 
-5. do $ cp /usr/local/imdba_python/imdbscrape.py /usr/bin/*
-
-6. do $ cd /usr/bin/
-
-7. sudo chmod +x imdbscrape.py (untested)
-    
-8. $ sudo vi imdbscrape.py (or you can use vim : $ sudo vim imdbscrape.py)
-    
-9. Add this line as the first line in the script:
-      #!/usr/bin/env python3
-    
-10. At the unix command prompt, type the following to make imdbscrape.py executable:
+Linux
+------
+1. Follow this tutorial to ensure your linux env is set up (http://openbookproject.net/thinkcs/python/english3e/app_c.html
+2. Open terminal
+3. do $ cd /usr/bin/imdb_python/imdbscrape
+4. $ sudo vi main.py (or you can use vim like : $ sudo vim imdbscrape.py)
+5. Add this line as the first line in the script:
+      #!/usr/bin/env python3   
+6. At the unix command prompt, type the following to make imdbscrape.py executable:
       do $ chmod +x imdbscrape.py
-    
-11. Move imdbscrape.py into your bin directory, and it will be runnable from anywhere.
+7.Move imdbscrape.py into your bin directory, and it will be runnable from anywhere.
 
-12. pip install requests
-
-13. pip install BeautifulSoup4
-
-14. pip install lmxl
-
-15. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank*
-
-Windows:
-    
-1. clone repo (zip).
-    
+Windows
+-------
+1. clone repo (zip). 
 2. Open imdba_python-master.zip
-    
 3. Copy imdba_python-master File and it's contents to desktop.
-    
 4. Open command window ( winkey + r ), enter 'cmd'.
-    
 5. Enter *cd desktop*.
-   
-6. cd imdba_python-master.
-    
+6. cd imdb_python\imdbscrape.
 7. pip install requests
-    
 8. pip install BeautifulSoup4
+9. Execute *python main.py --top 10 --print True --csv True --sortBy Rank
 
-9. pip install lmxl
-    
-10. Execute *python imdbscrape.py --top 10 --print True --csv True --sortBy Rank*
+OUTPUT : python imdbscrape.py --h
+-------------------------------------------------------------------------------------------------------------
 
-***************************** python imdbscrape.py --h *****************************
-
+*Argument Error : please use --csv or --console_print to select either or for output*
 
 usage: imdbscrape.py [-h] [--print PRINT] [--csv CSV] [--top TOP]
  [--sortBy SORTBY]
@@ -78,24 +51,30 @@ usage: imdbscrape.py [-h] [--print PRINT] [--csv CSV] [--top TOP]
 IMDB top 250 movies. See the commands below for further usage
 
 optional arguments:
-  -h, --help            show this help message and exit
-  --console_print CONSOLE_PRINT
-                        Print Formatted output to console (True|False)
-  --csv CSV             Export csv to same directory as script (True|False)
-  --top TOP             Top (n) where n is an (integer) default : 50
-  --sortBy SORTBY       SortBy (Rank, Title, Year, Rating, NoR, Runtime,
-                        Director)
-  --setup SETUP         install all required dependencies for package (pip
-                        required) (True|False)
+  -h, --help     show this help message and exit
   
+--print PRINT    Print ArrayOfArrays to console (True|False)
   
-*********************************************************************************
+--csv CSV        Export csv to same directory as script (True|False)
+  
+--top TOP        Top (n) where n is an (integer) default : 50
+  
+--sortBy SORTBY  SortBy (Rank, Title, Year, Rating, NoR, Runtime, Director)
 
-As seen above, the basic options are :
+--setup SETUP    install all required dependencies for package (pip required) (True|False)
 
-1. --print   True|False        : default false.
-2. --csv     True|False        : default false.
-3. --top n                     : default 50.
-4. --sortBy (Rank, Title, Year, Rating, NoR, Runtime, Director) : default no sort
-5. --setup   True|False        : default false
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+As seen above, the basic options are 
+-------------------------------------------------------------------------------------------------------------
+--print   True|False        : default None.
+
+--csv     True|False        : default None.
+
+--top n                     : default 50.
+
+--sortBy (Rank, Title, Year, Rating, NoR, Runtime, Director) : default None
+
+--setup                     : default None
 
