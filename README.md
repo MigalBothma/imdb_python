@@ -16,10 +16,10 @@ How to Execute
 
 Using python setup
 ------------------
-1. Navigate to *\imdb_python*
+1. Navigate to */imdb_python*
 2. do python setup.py install (This will install package to python/lib/site-packages )
 3. pip install -r requirements.txt ( Install requirements )
-4. In *\imdb_python* do *python imdbscrape --console_print True*
+4. In */imdb_python* do *python imdbscrape --console_print True*
 
 Linux
 ------
