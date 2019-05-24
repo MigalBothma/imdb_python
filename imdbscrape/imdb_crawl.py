@@ -8,6 +8,10 @@ def crawl_top_n(base_url, movies_names_wl, args):
     """
     This module is used to iterate and crawl over base_url + movies_names_with_links[Links] .
 
+    :param base_url : base_url of imdb
+
+    base_url : str
+
     :param list movies_names_wl: a list of movie_names_with_links
         movie : [Rank, Link, Title, Year, Rating, Number of Ratings, Runtime, Director]
 

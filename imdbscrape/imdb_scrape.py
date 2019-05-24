@@ -9,6 +9,7 @@ import imdb_crawl
 import imdb_sortBy
 import imdb_print
 import imdb_csv
+import imdb_helpers
 
 
 def scrape_top_n(args):
@@ -16,7 +17,7 @@ def scrape_top_n(args):
     This module is used to scrape the top 250 elements from IMDB and acts as orchestrator and processing central of this application.
 
     :param Namespace args: [ top, csv, sortBy, setup, console_print]
-    
+
     top : int
     csv : bool
     sortBy : string
@@ -51,14 +52,10 @@ def scrape_top_n(args):
             movies_names_wl[index-1].append(rating.text)
 
     # Remove empty entries from movies_names
-    for movie in movies_names_wl:
-        if(movie == []):
-            movies_names_wl.remove(movie)
+    movies_names_wl = imdb_helpers.remove_empty_arrays(movies_names_wl)
 
     # attach ranks to movie_names
-    for index, movie in enumerate(movies_names_wl):
-        if(movie != []):
-            movies_names_wl[index].insert(0, index+1)
+    movies_names_wl = imdb_helpers.attach_ranks(movies_names_wl)
 
     # Delve deeper into top (n) default: 50
     movies_names_wl = imdb_crawl.crawl_top_n(
