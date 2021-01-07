@@ -13,7 +13,7 @@ setup(
     long_description=open('README.txt').read(),
     install_requires=[
         'requests>=2.20.0',
-        'lxml==4.3.3',
+        'lxml==4.6.2',
         'BeautifulSoup4==4.7.0'
     ],
 )
